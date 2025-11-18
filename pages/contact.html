@@ -2,9 +2,13 @@
 <html>
 <head>
     
-    <!----Basics and Linking-------->
-    <title>About Me - Juan Lopez's Portfolio</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!----Basics and Linking------>
+    <title>Contact Me - Juan Lopez's Portfolio</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="icon" href="../assets/icons/steamhappy.ico" sizes="any" />
 
      <!-- Mobile & theming -->
@@ -13,7 +17,7 @@
      <meta name="color-scheme" content="light dark" />
 
      <!-- SEO basics -->
-    <meta description="website"/>
+    <meta description="Contact Juan Lopez"/>
     <meta charset="UTF-8"/>   
     <meta robots="index"/>  
 
@@ -26,11 +30,26 @@
         <main class="hero-main">
             <header id="hero">
                 <div class="hero-image">
-                    <img src="../assets/images/gizmo.jpg" alt="Juan Lopez">
+                    <img src="../assets/images/cute.png" alt="Decorative image for Juan Lopez's contact page, it is bugdroid">
                 </div>
-                <div class="hero-bio">
-                    <p>Contact me
-                    </p>
+                <div class="hero-bio contact-page">
+                    <h2>Contact Me</h2>
+                    <form id="contactForm">
+                        <label>Name:
+                            <input type="text" name="name" id="name" required>
+                        </label>
+                        <label>Email:
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                        <label>Subject:
+                            <input type="text" name="subject" id="subject" required>
+                        </label>
+                        <label>Message:
+                            <textarea name="message" id="message" required></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                    <p id="status"></p>
                 </div>
             </header>
         </main>
@@ -40,8 +59,8 @@
             <nav class="navbar">
                 <div class="navbar-text">
                     <h1>Juan Lopez</h1>
-                    <h2>About Me</h2>
-                    <p>Learn more about my background, interests, and what drives my passion for technology and community building.</p>
+                    <h2>Contact Me</h2>
+                    <p>Get in touch! I'd love to hear from you.</p>
                 </div>
                 
                 <!-- links -->
@@ -59,5 +78,7 @@
             <p>&copy; 2025 Juan Lopez. All rights reserved.</p>
         </footer>
     </div>
+
+    <script src="../scripts/email.js"></script>
 </body>
 </html>

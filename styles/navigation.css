@@ -1,0 +1,80 @@
+/* Navigation - Sidebar navigation and links */
+.navbar-section {
+    grid-area: sidebar;
+    background-color: #000;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.navbar-text {
+    margin-bottom: 2rem;
+}
+
+.navbar-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.navbar-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.navbar-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-top: auto; 
+}
+
+.navbar li {
+    margin-bottom: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+.navbar a:focus {
+    outline: 3px solid white;
+    outline-offset: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+.footer-section {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 0.9rem;
+}
