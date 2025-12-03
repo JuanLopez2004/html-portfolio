@@ -3,8 +3,9 @@
     padding: 2rem;
     overflow-y: auto;
     height: 100%;
-    background-color: rgb(66, 66, 66);
+    background-color: #505050;
     color: rgb(255, 255, 255);
+    user-select: none;
 }
 
 .resume-section {
@@ -84,5 +85,15 @@
 
 .skills-grid :hover
 {
-    box-shadow: 0 15px 40px 10px rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 15px 40px 10px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.skill-category {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
 }

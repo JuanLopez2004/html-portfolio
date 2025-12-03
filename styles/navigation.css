@@ -30,6 +30,23 @@
     font-size: 0.9rem;
     line-height: 1.5;
     color: #ccc;
+    animation: fadeSlide 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0.6;
+        transform: translateX(0px);
+        color: #ccc;
+    }
+    50% {
+        color: #6366f1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(5px);
+        color: #ec4899;
+    }
 }
 
 .navbar ul {

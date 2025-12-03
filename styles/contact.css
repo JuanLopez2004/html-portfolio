@@ -68,8 +68,25 @@
 }
 
 .hero-bio.contact-page button:focus {
-    outline: 3px solid #4CAF50;
-    outline-offset: 3px;
+    outline: 3px solid #6366f1;
+    outline-offset: 2px;
+}
+
+.hero-bio.contact-page button:focus-visible {
+    outline: 3px solid #6366f1;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.2);
+}
+
+/* Error state for form valid */
+.hero-bio.contact-page input:invalid:not(:placeholder-shown),
+.hero-bio.contact-page textarea:invalid:not(:placeholder-shown) {
+    border-color: #ef4444;
+}
+
+.hero-bio.contact-page input:valid,
+.hero-bio.contact-page textarea:valid {
+    border-color: #10b981;
 }
 
 #status {

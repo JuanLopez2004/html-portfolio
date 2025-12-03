@@ -1,8 +1,23 @@
-/* Base Styles - Global resets and typography */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* keyboard nav */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #6366f1;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 body {
@@ -26,8 +41,46 @@ p {
 }
 
 h1:hover {
-    color: #888; 
+    color: #40ef21; 
     transform: translateX(5px);
-    transition: color 0.3s ease, text-decoration 0.3s ease;; 
+    transition: color 0.3s ease, transform 0.3s ease; 
     cursor: default;
+}
+
+h2:hover {
+    color: #ec4899;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.navbar a:hover {
+    color: #6366f1;
+}
+
+.resume-section h2:hover {
+    color: #fbbf24;
+    transition: color 0.3s ease;
+}
+
+/* enhanced focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid #6366f1;
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #6366f1;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.2);
+}
+
+/* visible focus for all interactive elements */
+*:focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
 }

@@ -1,15 +1,16 @@
 <!doctype HTML>
-<html>
+<html lang="en">
 <head>
     
     <!----Basics and Linking------>
-    <title>Contact Me - Juan Lopez's Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/layout.css">
     <link rel="stylesheet" href="../styles/navigation.css">
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/images.css">
     <link rel="stylesheet" href="../styles/responsive.css">
-    <link rel="icon" href="../assets/icons/steamhappy.ico" sizes="any" />
+    <link rel="icon" href="../assets/icons/android.ico?v=1" type="image/x-icon" />
 
      <!-- Mobile & theming -->
      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -23,40 +24,42 @@
 
 </head>
 <body>
+    <a href="#hero" class="skip-link">Skip to main content</a>
     <!-- Grid Container -->
     <div class="grid-container">
         
         <!-- Hero Section -->
-        <main class="hero-main">
+        <main class="hero-main" id="main-content">
             <header id="hero">
                 <div class="hero-image">
                     <img src="../assets/images/cute.png" alt="Decorative image for Juan Lopez's contact page, it is bugdroid">
                 </div>
+
                 <div class="hero-bio contact-page">
                     <h2>Contact Me</h2>
-                    <form id="contactForm">
-                        <label>Name:
-                            <input type="text" name="name" id="name" required>
+                    <form id="contactForm" aria-label="Contact form">
+                        <label for="name">Name:
+                            <input type="text" name="name" id="name" required aria-required="true">
                         </label>
-                        <label>Email:
-                            <input type="email" name="email" id="email" required>
+                        <label for="email">Email:
+                            <input type="email" name="email" id="email" required aria-required="true">
                         </label>
-                        <label>Subject:
-                            <input type="text" name="subject" id="subject" required>
+                        <label for="subject">Subject:
+                            <input type="text" name="subject" id="subject" required aria-required="true">
                         </label>
-                        <label>Message:
-                            <textarea name="message" id="message" required></textarea>
+                        <label for="message">Message:
+                            <textarea name="message" id="message" required aria-required="true"></textarea>
                         </label>
-                        <button type="submit">Send</button>
+                        <button type="submit" aria-label="Send contact form">Send</button>
                     </form>
-                    <p id="status"></p>
+                    <p id="status" role="status" aria-live="polite"></p>
                 </div>
             </header>
         </main>
 
         <!-- Navbar -->
         <header id="navbar" class="navbar-section">
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Main navigation">
                 <div class="navbar-text">
                     <h1>Juan Lopez</h1>
                     <h2>Contact Me</h2>
@@ -68,7 +71,7 @@
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Me</a></li>
                 </ul>
             </nav>
         </header>

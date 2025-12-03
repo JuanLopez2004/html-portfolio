@@ -1,5 +1,5 @@
 <!doctype HTML>
-<html>
+<html lang="en">
 <head>
     
     <!----Basics and Linking------>
@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/layout.css">
     <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/images.css">
     <link rel="stylesheet" href="../styles/responsive.css">
-    <link rel="icon" href="../assets/icons/steamhappy.ico" sizes="any" />
+    <link rel="icon" href="../assets/icons/android.ico?v=1" type="image/x-icon" />
 
      <!-- Mobile & theming -->
      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -22,18 +23,22 @@
 
 </head>
 <body>
+    <a href="#hero" class="skip-link">Skip to main content</a>
     <!-- Grid Container -->
     <div class="grid-container">
         
         <!-- Hero Section -->
-        <main class="hero-main">
+        <main class="hero-main" id="main-content">
             <header id="hero">
                 <div class="hero-image">
                     <img src="../assets/images/andy.jpg" alt="Picture of Bugdroid, an Android OS mascot. Green and Glowing!">
                 </div>
                 <div class="hero-bio">
                     <p> I'm 21 years old, I am from Cicero, Illinois and was born in Berwyn. I went to a predominantly latino highschool where
-                        I further nurtured a passion of technology- particularly film and computer repair.
+                        I further nurtured a passion of technology- particularly film and computer repair. Throughout my journey, I've developed 
+                        a deep appreciation for creating accessible and inclusive technology. I'm passionate about web design, user experience, 
+                        and building communities through technology. As Chair of NIU's ACM Chapter, I strive to create a welcoming 
+                        environment where everyone can learn and grow together.
                     </p>
                 </div>
             </header>
@@ -41,7 +46,7 @@
 
         <!-- Navbar -->
         <header id="navbar" class="navbar-section">
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Main navigation">
                 <div class="navbar-text">
                     <h1>Juan Lopez</h1>
                     <h2>About Me</h2>
@@ -51,7 +56,7 @@
                 <!-- links -->
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html" aria-current="page">About Me</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
